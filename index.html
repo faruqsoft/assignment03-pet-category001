@@ -28,6 +28,7 @@
             "Primary-black": 'rgba(17, 17, 17, 1)',
             "Secondary-black": 'rgba(199, 173, 173, 1)',
             "Regsubbtn"        :'rgba(255, 220, 38, 1)',
+            "bg-card"     :'#F9DF8A',
 
            
           }
@@ -53,21 +54,22 @@
 
 </head>
 <body class="">
-    <header class="bg-[#FFF9F4] max-w-screen-xl mx-auto  px-4">
-        <nav class=" ">
-            <div class="navbar justify-between ">
+  <!-- header section -->
+    <header class="bg-[#FFF9F4]">
+        <nav class=" max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="  flex justify-between items-center ">
                     <!-- nav logo -->
-                <div>
-                    <div class="">
+                <div class="flex justify-center items-center space-x-2">
+                    <div class="w-12">
                         <img src="./c1-assets/logo-header.png">
                     </div>
                         <div class="hidden lg:flex">
-                        <a class="  text-2xl text-[#111]">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                        <a class="  text-2xl text-[#111] ">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
                     </div>
                 </div>
                     <!-- nav items center -->
-                <div class="navbar-center hidden lg:flex">
-                     <ul class="menu menu-horizontal px-1">
+                <div class=" hidden lg:flex">
+                     <ul class="flex space-x-6">
                           <li><a class="text-lg Primary-black">Find a pet</a></li>
                           <li><a class="text-lg Primary-black">Breeds</a></li>
                          <li><a class="text-lg Primary-black">Contact us</a></li>
@@ -77,31 +79,27 @@
             
 
                   <!-- icons content -->
-                <div class="gap-4">
+                <div class=" flex items-center gap-4">
                        <!-- notification icon -->
-                    <div class="navbar-center hidden lg:flex">
-                        <a class=""><i class="fa-regular fa-bell"></i></a>
+                    <div class=" hidden lg:flex">
+                        <a class=""><i class="fa-regular fa-bell w-6"></i></a>
                     </div>
                     <!-- search icon -->
-                    <div class="navbar-center hidden lg:flex">
+                    <div class=" hidden lg:flex">
                         <a class=""><i class="fa-solid fa-magnifying-glass Primary-black w-6"></i></a>
                     </div>
                     <!-- login btn -->
-                    <div class="navbar-center hidden lg:flex">
+                    <div class=" hidden lg:flex">
                         <a class=" border-2 border-[#FFDC26] text-[#C9AEAE] text-lg py-1 px-7 rounded-lg">Login</a>
                     </div>
                     <!-- register btn -->
-                    <div class="navbar-center hidden lg:flex">
+                    <div class=" hidden lg:flex">
                         <a class="bg-[#FFDC26] text-lg py-1 px-7 rounded-lg text-[#111] ">Register</a>
                     </div>
 
-                </div>
-
-
-
-                  <!-- icon dropdown -->
-                  <div class="dropdown ">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                       <!-- icon dropdown -->
+                  <div class="lg:hidden ">
+                    <div  class="btn btn-ghost  ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -115,41 +113,176 @@
                           d="M4 6h16M4 12h8m-8 6h16" />
                       </svg>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a class="text-lg Primary-black">Find a pet</a></li>
-                      <li><a class="text-lg Primary-black">Breeds</a></li>
-                      <li><a class="text-lg Primary-black">Contact us</a></li>
-                    </ul>
+                   
                 </div>
+
+
+                </div>
+
+
+
+               
 
             
             </div>
         </nav>
     </header>
     <!-- hero section -->
-     <div>
-        <div class="flex flex-col">
-          <!-- hero text -->
-           <div>
-              <h1>Pamper Your Pet, Because They Deserve the Bes</h1>
-              <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-              <div>
-                
-              </div>
-           </div>
-           <!-- hero images -->
-            <div>
-              <div>
-                <img src="./c1-assets/cat-big.png">
-              </div>
-            </div>
+    <section>
+      <div class=" max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 my-20">
+        <div class="">
+          <div class=" max-w-[1300px] max-h-[750px] ">
+                      <!-- hero text -->
+                      <div class="overflow-auto">
 
-        </div>
-     </div>
+                        <h1 class="text-6xl text-Primary-black font-adlam pt-4 mb-4" >Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
+      
+                        <p class="text-lg font-sora text-Primary-black mb-4">Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p>
+                        <!-- btn -->
+                           <div>
+         
+                             <div class=" ">
+                               <a class="bg-[#FFDC26]  w-4 h-3 rounded-lg"></a>
+                             </div>
+                             <div class="md:hidden ">
+                               <a class="bg-[#FFDC26]  text-lg py-1 px-7 rounded-lg text-[#111] font-sora">Find a pet</a>
+                           </div>
+       
+                      </div>
 
-    <main></main>
+                     
+
+
+                         <!-- hero images -->
+                    <div class=" ">
+                      <div class="w-full h-96">
+                        <img src="./c1-assets/cat-big.png">
+                      </div>
+                    </div>
+
+              
+
+             </div>
+           
+  
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- main -->
+    <main class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- brows sectionL -->
+       <div>
+        
+          <div class="">
+              <!-- title -->
+               <div class="text-center">
+                <h2 class="text-Primary-black text-3xl">Browse By Categories</h2>
+               </div>
+               <!-- card content -->
+                <div class="flex flex-wrap  gap-6 ">
+                  <!-- card -->
+                   <div class="bg-bg-card w-52 h-60 rounded-xl py-8 px-12 text-center">
+                      <!-- img -->
+                      <div class="avatar ">
+                        <div class="bg-white rounded-full p-7 mb-6">
+                          <img class=" w-48 h-48" src="./c1-assets/dog-cartoon.png" />
+                        </div>
+                      </div>
+                      <!-- text -->
+                       <div>
+                        <h2 class="text-lg text-black mb-3">Dog</h2>
+                        <p class="text-lg text-black">3 items</p>
+                       </div>
+                   </div>
+
+                  <!-- card -->
+                   <div class="bg-bg-card w-52 h-60 rounded-xl py-8 px-12 text-center">
+                      <!-- img -->
+                      <div class="avatar ">
+                        <div class="bg-white rounded-full p-7 mb-6">
+                          <img class=" w-48 h-48" src="./c1-assets/fish-cartoon.png" />
+                        </div>
+                      </div>
+                      <!-- text -->
+                       <div>
+                        <h2 class="text-lg text-black mb-3">Dog</h2>
+                        <p class="text-lg text-black">3 items</p>
+                       </div>
+                   </div>
+
+
+                  <!-- card -->
+                   <div class="bg-bg-card w-52 h-60 rounded-xl py-8 px-12 text-center">
+                      <!-- img -->
+                      <div class="avatar ">
+                        <div class="bg-white rounded-full p-7 mb-6">
+                          <img class=" w-48 h-48" src="./c1-assets/cat-cartoon.png" />
+                        </div>
+                      </div>
+                      <!-- text -->
+                       <div>
+                        <h2 class="text-lg text-black mb-3">Dog</h2>
+                        <p class="text-lg text-black">3 items</p>
+                       </div>
+                   </div>
+
+
+                  <!-- card -->
+                   <div class="bg-bg-card w-52 h-60 rounded-xl py-8 px-12 text-center">
+                      <!-- img -->
+                      <div class="avatar ">
+                        <div class="bg-white rounded-full p-7 mb-6">
+                          <img class=" w-48 h-48" src="./c1-assets/bird-cartoon.png" />
+                        </div>
+                      </div>
+                      <!-- text -->
+                       <div>
+                        <h2 class="text-lg text-black mb-3">Dog</h2>
+                        <p class="text-lg text-black">3 items</p>
+                       </div>
+                   </div>
+
+                  <!-- card -->
+                   <div class="bg-bg-card w-52 h-60 rounded-xl py-8 px-12 text-center">
+                      <!-- img -->
+                      <div class="avatar ">
+                        <div class="bg-white rounded-full p-7 mb-6">
+                          <img class=" w-48 h-48" src="./c1-assets/mouse-cartoon.png" />
+                        </div>
+                      </div>
+                      <!-- text -->
+                       <div>
+                        <h2 class="text-lg text-black mb-3">Dog</h2>
+                        <p class="text-lg text-black">3 items</p>
+                       </div>
+                   </div>
+
+
+                  <!-- card -->
+                   <div class="bg-bg-card w-52 h-60 rounded-xl py-8 px-12 text-center">
+                      <!-- img -->
+                      <div class="avatar ">
+                        <div class="bg-white rounded-full p-7 mb-6">
+                          <img class=" w-48 h-48" src="./c1-assets/rabbit-cartoon.png" />
+                        </div>
+                      </div>
+                      <!-- text -->
+                       <div>
+                        <h2 class="text-lg text-black mb-3">Dog</h2>
+                        <p class="text-lg text-black">3 items</p>
+                       </div>
+                   </div>
+
+
+                 
+
+                </div>
+          </div>
+       </div>
+
+    </main>
     <footer></footer>
     
 </body>
